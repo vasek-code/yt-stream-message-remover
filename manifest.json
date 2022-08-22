@@ -1,0 +1,14 @@
+{
+  "name": "YouTube stream message remover",
+  "description": "This extension makes sure your chat will not crash.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["script.js"]
+    }
+  ],
+  "permissions": ["tabs"],
+  "host_permissions": ["http://*/*"]
+}
